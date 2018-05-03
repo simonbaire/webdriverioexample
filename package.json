@@ -7,6 +7,8 @@
   },
   "author": "Simon Baire",
   "dependencies": {
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "chromedriver": "^2.38.2",
@@ -18,5 +20,17 @@
     "wdio-screenshot": "^0.5.0",
     "wdio-selenium-standalone-service": "0.0.10",
     "webdriverio": "^4.12.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
   }
 }
