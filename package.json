@@ -3,7 +3,7 @@
   "version": "1.1.1",
   "description": "exampleframework using webdriverio and cucumber",
   "scripts": {
-    "test": "node node_modules/webdriverio/bin/wdio ./test/config/suite.cucumber.conf.js"
+    "test": "node node_modules/webdriverio/bin/wdio ./test/config/conf.js"
   },
   "author": "Simon Baire",
   "dependencies": {
