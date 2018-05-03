@@ -6,4 +6,8 @@ defineSupportCode(function({ Then }) {
     googlePage.searchResults().forEach(function(link) {link.getText().toLowerCase().should.include(searchWord)})
   });
 
+  Then(/^I should be on "([^"]*)"$/, function(url) {
+    browser.getUrl().should.equal(url)
+  });
+
 });

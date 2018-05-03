@@ -7,7 +7,7 @@ class googlePage extends Page  {
 
   get searchField()   { return browser.element('//*[@name="q"]');}
   get searchButton()  { return browser.element("[value='Google Search']"); }
-  get results()   { return browser.elements('#search h3.r'); }
+  get results()   { return browser.elements('#search h3.r > a'); }
 
   visit () {
       super.openPage('https://www.google.co.uk/')

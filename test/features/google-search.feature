@@ -14,3 +14,4 @@ Feature: Performing a google Search
         When I enter "Home - BBC News" into the search box
         And  I click the search button
         When I click "Home - BBC News" from the search results
+        Then I should be on "http://www.bbc.com/news"

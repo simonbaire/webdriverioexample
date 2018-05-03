@@ -12,9 +12,9 @@ defineSupportCode(function({ When }) {
   });
 
   When(/^I click "([^"]*)" from the search results$/, function(searchWord) {
-    googlePage.searchResults().forEach(function(link) {
-      if (link.getText() === searchWord ) {
-        link.click();
+    googlePage.searchResults().some(function(link) {
+      if (link.getText() === searchWord && link.isVisible() === true ) {
+               return link.click()
       }
     });
   });
