@@ -23,6 +23,7 @@ $ npm test
 4. Need to set up hooks to set states before and after test runs (e.g clearing browser cookies before).
 5. Set up parrallel test run
 6. Would be good to set up headless tests to make things faster
-7. Change console output to display features that have passed and failled rather than by step
+7. Change console output to display features that have passed and failed rather than by step
+8. Some error handling required
 
 
