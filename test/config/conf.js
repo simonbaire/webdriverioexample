@@ -31,7 +31,6 @@ exports.config = {
     cucumberOpts: {
         require: ['./test/stepDefinitions/given.js', './test/stepDefinitions/when.js', './test/stepDefinitions/then.js'],
         backtrace: true,
-        compiler: ['js:babel-core/register'],
         format: ['pretty'], // report format
         timeout: defaultTimeoutInterval,    // timeout for step definitions
     },
