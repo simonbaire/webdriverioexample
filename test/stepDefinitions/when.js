@@ -11,5 +11,11 @@ defineSupportCode(function({ When }) {
     googlePage.search();
   });
 
-
+  When(/^I click "([^"]*)" from the search results$/, function(searchWord) {
+    googlePage.searchResults().forEach(function(link) {
+      if (link.getText() === searchWord ) {
+        link.click();
+      }
+    });
+  });
 });

@@ -7,7 +7,7 @@ class googlePage extends Page  {
 
   get searchField()   { return browser.element('//*[@name="q"]');}
   get searchButton()  { return browser.element("[value='Google Search']"); }
-  get results()   { return browser.elements('#search h3.r > a'); }
+  get results()   { return browser.elements('#search h3.r'); }
 
   visit () {
       super.openPage('https://www.google.co.uk/')
@@ -17,13 +17,14 @@ class googlePage extends Page  {
   enterSearchText (searchWord) {
     this.searchField.clearElement();
     this.searchField.setValue(searchWord);
+    browser.pause(1000);
   }
 
   search () {
     this.searchButton.click();
   }
   searchResults () {
-    this.results.waitForVisible(9000);
+    this.results.waitForVisible(90000);
      return this.results.value;
   }
 }

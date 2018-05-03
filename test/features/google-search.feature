@@ -8,3 +8,9 @@ Feature: Performing a google Search
         When I enter "happy" into the search box
         And  I click the search button
         Then I should see a list of search results with the word "happy"
+
+    Scenario: Selecting a search result on google
+        Given I am on the search page
+        When I enter "Home - BBC News" into the search box
+        And  I click the search button
+        When I click "Home - BBC News" from the search results
