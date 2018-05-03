@@ -1,5 +1,5 @@
-import { defineSupportCode } from 'cucumber';
-import googlePage from '../pageobjects/google-search.page';
+const {defineSupportCode} = require('cucumber');
+const googlePage = require('../pageobjects/google-search.page');
 
 defineSupportCode(function({ Given }) {
   Given(/^I am on the search page$/, function() {

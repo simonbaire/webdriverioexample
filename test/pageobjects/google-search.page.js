@@ -1,4 +1,4 @@
-import Page from './page';
+const Page = require('./page');
 
 class googlePage extends Page  {
   /**
@@ -28,4 +28,4 @@ class googlePage extends Page  {
   }
 }
 
-export default new googlePage();
+module.exports = new googlePage;
