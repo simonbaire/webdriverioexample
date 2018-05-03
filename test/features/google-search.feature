@@ -11,7 +11,7 @@ Feature: Performing a google Search
 
     Scenario: Selecting a search result on google
         Given I am on the search page
-        When I enter "Home - BBC News" into the search box
+        When I enter "101 ways" into the search box
         And  I click the search button
-        When I click "Home - BBC News" from the search results
-        Then I should be on "http://www.bbc.com/news"
+        When I click "Join us" from the search results
+        Then I should be on "https://www.101ways.com/join-us/"
